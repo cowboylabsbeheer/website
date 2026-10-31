@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082d60">
+  <meta name="description" content="Cowboy Labs geeft Cowboy e-bikes een tweede leven. Neem contact met ons op.">
+  <title>Cowboy Labs — Refurbished Cowboy e-bikes</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #0b2e5a;
+      --muted: #65738a;
+      --border: #e2e8f0;
+      --canvas: #f6f8fc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; }
+
+    body {
+      min-width: 280px;
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      background: radial-gradient(circle at 50% -15%, #e1ecfc 0, var(--canvas) 46%, #f9fafc 100%);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      min-height: 100svh;
+      width: min(100%, 1040px);
+      padding: clamp(28px, 5vw, 76px) 24px 28px;
+      margin: 0 auto;
+    }
+
+    main {
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: clamp(12px, 2.3vw, 26px);
+      box-shadow: 0 28px 70px -38px rgba(7, 37, 81, .38);
+    }
+
+    h1 {
+      max-width: 700px;
+      margin: clamp(30px, 4.5vw, 50px) auto 12px;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      line-height: 1.16;
+      letter-spacing: -.045em;
+      font-weight: 650;
+    }
+
+    .intro {
+      margin: 0 auto;
+      font-size: clamp(.98rem, 2vw, 1.1rem);
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      max-width: 100%;
+      margin-top: 30px;
+      padding: 16px 22px;
+      border: 1px solid #092957;
+      border-radius: 999px;
+      background-color: var(--ink);
+      color: #fff;
+      font-size: .98rem;
+      font-weight: 600;
+      line-height: 1.4;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      transition: background-color .18s ease, transform .18s ease;
+    }
+
+    .contact:hover { background-color: #175197; transform: translateY(-2px); }
+    .contact:focus-visible { outline: 3px solid #79aef2; outline-offset: 4px; }
+    .contact svg { width: 19px; height: 19px; flex-shrink: 0; }
+
+    footer {
+      padding-top: 48px;
+      font-size: .8rem;
+      color: #8290a3;
+      text-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .contact { transition: none; }
+      .contact:hover { transform: none; }
+    }
+
+    @media (max-width: 480px) {
+      .page { padding-inline: 16px; }
+      .contact { width: 100%; border-radius: 16px; font-size: .9rem; }
+      footer { padding-top: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <!-- Het originele logo, ongewijzigd, naast index.html in de GitHub-repo. -->
+      <img class="logo" src="./Cowboy%20Labs.svg" alt="Cowboy Labs" width="1200" height="510">
+
+      <h1>Een tweede leven voor Cowboy e-bikes.</h1>
+      <p class="intro">Met zorg refurbished. Binnenkort meer.</p>
+
+      <!-- Verander alleen dit e-mailadres als je later info@cowboylabs.nl wilt gebruiken. -->
+      <a class="contact" href="mailto:cowboylabsbeheer@gmail.com" aria-label="Mail Cowboy Labs op cowboylabsbeheer@gmail.com">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m3 7 9 6 9-6"/>
+        </svg>
+        cowboylabsbeheer@gmail.com
+      </a>
+    </main>
+
+    <footer>© Cowboy Labs · Onafhankelijk specialist in refurbished e-bikes</footer>
+  </div>
+</body>
+</html>
